@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+	<shape>
+	 <!-- end colour at top, start colour at bottom -->
+	  <gradient
+	      android:angle="270"
+	      android:endColor="#FF2211" 
+	      android:startColor="#CCCCCC"/>	
+	</shape>
+    </item>
+    
+     <!-- Drop Shadow Stack -->
+     <item android:top="10dp" android:left="10dp"
+         android:right="10dp" android:bottom="10dp">
+        <shape android:shape="rectangle">           
+	  <gradient
+	      android:angle="270"
+	      android:endColor="#FF2211" 
+	      android:startColor="#CCCCCC"/>	            
+        </shape>
+    </item>
+     <item android:top="20dp" android:left="20dp"
+         android:right="20dp" android:bottom="20dp">
+        <shape android:shape="rectangle">           
+            	  <gradient
+	      android:angle="270"
+	      android:endColor="#FF2211" 
+	      android:startColor="#CCCCCC"/>
+        </shape>
+    </item>
+     <item android:top="30dp" android:left="30dp"
+         android:right="30dp" android:bottom="30dp">
+        <shape android:shape="rectangle">     
+            <solid android:color="#CCCCCC" />       
+        </shape>
+    </item>
+     
+    <!-- Background -->
+</layer-list>

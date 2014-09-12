@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/screen_bg"
+    android:paddingTop="48dp">
+        
+	<View
+	    android:id="@+id/thickLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wheel_frame"/>
+		
+    <LinearLayout
+        android:id="@+id/slotReels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/thickLine1"
+        android:orientation="horizontal">
+        	
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+		
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>							
+	
+	</LinearLayout>	
+
+	<View
+	    android:id="@+id/thickLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@id/slotReels"
+        android:background="@drawable/wheel_frame"/>
+	
+    <LinearLayout
+        android:id="@+id/slotSpinLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+        android:layout_toRightOf="@id/thickLine2"
+        android:layout_alignTop="@id/thickLine1"
+        android:layout_alignBottom="@id/thickLine2"        
+        android:background="@drawable/wheel_frame"
+        android:orientation="vertical">		
+	<TextView
+	    android:id="@+id/welcomeTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/welcome_text"
+        android:padding="10dp"/>    
+
+	<TextView
+	    android:id="@+id/resultTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:text="@string/result_text"
+        android:padding="10dp"/>    
+		
+	<Button
+	    android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/spin"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="@drawable/spin_button_bg"/>
+	
+	
+	<TextView
+	    android:id="@+id/authorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/author_text"/>	
+    </LinearLayout>    	
+    
+</RelativeLayout>        

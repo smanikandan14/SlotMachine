@@ -1,0 +1,33 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+        <style name="CustomActionBarTheme"
+        parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:windowBackground">@android:color/black</item>
+    </style>
+    
+    <style name="MyActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">       
+         <item name="titleTextStyle">@style/MyActionBarTitleText</item>
+          <item name="android:titleTextStyle">@style/MyActionBarTitleText</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>    
+    </style>
+    
+	<style name="MyActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+	    <item name="android:textColor">@android:color/white</item>
+	</style>    
+    
+</resources>

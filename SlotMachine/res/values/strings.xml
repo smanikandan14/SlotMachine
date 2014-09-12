@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Thumbtack SlotMachine</string>
+
+    <string name="welcome_text">Like to drink coffee, tea, or espresso. Spin and get yours. Good luck !</string>
+    
+    <string name="beverage_coffee">COFFEE</string>
+    <string name="beverage_tea">TEA</string>
+    <string name="beverage_espresso">ESPRESSO</string>
+    
+	<string name="coffee_maker">Coffee Maker</string>
+    <string name="coffee_grounds">Coffee Grounds</string>	
+	<string name="coffee_filter">Coffee Filter</string>  
+	
+	<string name="teapot">Tea Pot</string>
+	<string name="tea_strainer">Tea Strainer</string>
+	<string name="loose_tea">Loose Tea</string>
+	
+	<string name="espresso_machine">Espresso Machine</string>
+	<string name="espresso_tamper">Espresso Tamper</string>
+	<string name="espresso_beans">Espresso Beans</string>
+	
+	<string name="spin">Spin</string>
+	<string name="result_text">Enjoy %1$s :)</string>
+	<string name="try_again_text">Bad luck try again :(</string>
+	
+	<string name="author_text">Sep 2014 - Mani / smanikandan14</string>
+	
+</resources>

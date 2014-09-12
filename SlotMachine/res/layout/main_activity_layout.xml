@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/screen_bg"
+    android:paddingTop="48dp">
+        		
+	<View
+	    android:id="@+id/thickLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wheel_frame"/>
+		
+    <LinearLayout
+        android:id="@+id/slotReels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@id/thickLine1"
+        android:orientation="horizontal">
+        	
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+	
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+		
+		<com.mani.slotmachine.WheelView
+		    android:id="@+id/wheel3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>							
+	
+	</LinearLayout>	
+
+	<View
+	    android:id="@+id/thickLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_below="@id/slotReels"
+        android:background="@drawable/wheel_frame"/>
+			
+    <RelativeLayout
+        android:id="@+id/slotSpinLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp"
+        android:layout_alignLeft="@id/thickLine2"
+        android:layout_alignRight="@id/thickLine2"
+        android:layout_below="@id/thickLine2"
+        android:background="@drawable/wheel_frame">		
+        
+	<TextView
+	    android:id="@+id/welcomeTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:padding="10dp"
+        android:text="@string/welcome_text"/>
+	
+	<TextView
+	    android:id="@+id/resultTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/welcomeTxt"
+        android:text="@string/result_text"/>    
+		
+	<Button
+	    android:id="@+id/spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/spin"
+        android:textColor="#ffffff"
+        android:layout_below="@id/welcomeTxt"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/spin_button_bg"/>
+	
+	<TextView
+	    android:id="@+id/authorTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/spin"
+        android:textSize="12sp"
+        android:text="@string/author_text"/>    
+		
+    </RelativeLayout>   	
+    
+</RelativeLayout>        

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item name="button_start_color" type="color">#259b24</item>
+    <item name="button_end_color" type="color">#2baf2b</item>
+    <item name="button_pressed_color" type="color">#0d5302</item>
+    <item name="button_disabled_color" type="color">#9e9e9e</item>
+    
+    <item name="bg_screen" type="color">#ffffff</item>
+</resources>
