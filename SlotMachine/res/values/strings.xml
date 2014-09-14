@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Thumbtack SlotMachine</string>
+    <string name="app_name">SlotMachine</string>
 
     <string name="welcome_text">Like to drink coffee, tea, or espresso. Spin and get yours. Good luck !</string>
     
@@ -25,6 +25,6 @@
 	<string name="result_text">Enjoy %1$s :)</string>
 	<string name="try_again_text">Bad luck try again :(</string>
 	
-	<string name="author_text">Sep 2014 - Mani / smanikandan14</string>
+	<string name="author_text">Mani / smanikandan14</string>
 	
 </resources>
