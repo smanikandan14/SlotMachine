@@ -38,7 +38,7 @@ When the lever is pulled (you can simulate this with the click of a button), the
 * use computeScrollOffset() and getCurrY() to obtain a offset (delta) values which is used to draw the slot items on the 
 * view canvas giving the visual feel of scrolling.
 
-### Cyclic scrolling.
+### Cyclic scrolling
 * In order to bring the cyclic scrolling effect, the top element when goes out of screen is added back to the slotitems list, basically reordering the list such that scrolling appears cyclic.
 
 ### canvas onDraw
