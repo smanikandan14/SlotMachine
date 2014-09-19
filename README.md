@@ -24,3 +24,6 @@ When the lever is pulled (you can simulate this with the click of a button), the
 
 
 ![alt text](https://github.com/smanikandan14/SlotMachine/blob/master/images/slotmachine_landscape.png "SlotMachine Landscape")
+
+###### Design In Detail
+![alt text](https://github.com/smanikandan14/SlotMachine/blob/master/images/scroller.png "SlotMachine Immplementation")
