@@ -16,7 +16,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * 
+ * Responsible for drawing a slot machine wheel.
  * @author maniselvaraj
  *
  */
