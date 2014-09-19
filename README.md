@@ -32,16 +32,16 @@ When the lever is pulled (you can simulate this with the click of a button), the
 * Since the slot machine reels scrolls in vertical directions ( can be top to bottom or bottom to top ) we need to draw slot items with its position Y values kept incremented or decremented depending on direction.
 * To compute the scroll value over a time duration 'Scroller' is used. 
 * Ask the scroller to generate scroll offset values for from Y '0' to Y 'distance'
-  ```java
+  ```
 	mScroller.startScroll(0, 0, 0, distance, duration); 
 	```
-* use computeScrollOffset() and getCurrY() to obtain a offset (delta) values which is used to draw the slot items on the 
-* view canvas giving the visual feel of scrolling.
+* use computeScrollOffset() and getCurrY() to obtain a offset (delta) values which is used to draw the slot items on the view canvas giving the visual feel of scrolling.
 
 ### Cyclic scrolling
 * In order to bring the cyclic scrolling effect, the top element when goes out of screen is added back to the slotitems list, basically reordering the list such that scrolling appears cyclic.
 
 ### canvas onDraw
+The below steps are repeated for each scroll delta values. ( I could have invalidated only dirty region and avoid drawing frames every time).
 * Draw frames 
 * Draw a white color background to entire view
 * Draw the slot items one by one with its positionY value.
